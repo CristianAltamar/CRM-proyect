@@ -1,0 +1,359 @@
+{
+    "data": [
+        {
+            "id": "contact_001",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Ana Martínez",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "Hola Ana, ¿cómo va el proyecto de marketing?",
+                    "time": "09:00 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "¡Hola! Va muy bien, estamos finalizando la presentación para el cliente.",
+                    "time": "09:05 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Excelente, ¿necesitas ayuda con algo?",
+                    "time": "09:07 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "Sí, ¿podrías revisar los gráficos de conversión?",
+                    "time": "09:10 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Claro, envíamelos cuando puedas.",
+                    "time": "09:12 AM"
+                }
+            ]
+        },
+        {
+            "id": "contact_002",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Carlos Rodríguez",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "¿Tienes los informes de ventas del último trimestre?",
+                    "time": "10:15 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Sí, los estoy terminando. ¿Los necesitas urgente?",
+                    "time": "10:20 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "Para la reunión de mañana, si es posible.",
+                    "time": "10:22 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Te los envío en una hora.",
+                    "time": "10:25 AM"
+                }
+            ]
+        },
+        {
+            "id": "contact_003",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Laura Sánchez",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Viste el nuevo diseño del sitio web?",
+                    "time": "11:30 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "¡Sí! Me encanta cómo quedó la página principal.",
+                    "time": "11:35 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "¿Qué opinas de los colores?",
+                    "time": "11:37 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "Creo que podríamos ajustar un poco el contraste.",
+                    "time": "11:40 AM"
+                }
+            ]
+        },
+        {
+            "id": "contact_004",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Diego Morales",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "¿Podemos reunirnos para discutir el nuevo proyecto?",
+                    "time": "13:00 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Claro, ¿qué te parece mañana a las 10?",
+                    "time": "13:05 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Perfecto, reservaré la sala de reuniones.",
+                    "time": "13:07 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_005",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "María González",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Cómo va el desarrollo del nuevo módulo?",
+                    "time": "14:20 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Avanzando bien, ya terminé la parte del backend.",
+                    "time": "14:25 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "¿Necesitas ayuda con el frontend?",
+                    "time": "14:30 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Sí, especialmente con la parte de animaciones.",
+                    "time": "14:35 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_006",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Roberto Pérez",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "¿Tienes un momento para revisar el presupuesto?",
+                    "time": "15:45 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Sí, dame 5 minutos y te llamo.",
+                    "time": "15:50 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Gracias, necesito tu opinión sobre los nuevos gastos.",
+                    "time": "15:52 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_007",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Patricia López",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Asistirás a la capacitación del jueves?",
+                    "time": "16:30 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Sí, ya me registré. ¿Tú también vas?",
+                    "time": "16:35 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Sí, podemos ir juntos.",
+                    "time": "16:40 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_008",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Fernando Torres",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "¿Ya revisaste el reporte de errores?",
+                    "time": "17:15 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Sí, encontré algunos bugs críticos.",
+                    "time": "17:20 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "¿Podemos programar una reunión para discutirlos?",
+                    "time": "17:25 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_009",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Isabel Ramírez",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Cómo va la campaña en redes sociales?",
+                    "time": "18:00 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Muy bien, el engagement ha aumentado un 30%.",
+                    "time": "18:05 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "¡Excelente! ¿Qué estrategia funcionó mejor?",
+                    "time": "18:10 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_010",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Miguel Ángel",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "Necesito tu ayuda con la presentación del cliente.",
+                    "time": "09:30 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Claro, ¿qué necesitas específicamente?",
+                    "time": "09:35 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "Los datos de rendimiento del último mes.",
+                    "time": "09:40 AM"
+                }
+            ]
+        },
+        {
+            "id": "contact_011",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Carmen Ortiz",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Terminaste el análisis de competencia?",
+                    "time": "10:45 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "Sí, encontré información muy interesante.",
+                    "time": "10:50 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "¿Podemos revisarlo juntos?",
+                    "time": "10:55 AM"
+                }
+            ]
+        },
+        {
+            "id": "contact_012",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Jorge Mendoza",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "¿Tienes tiempo para una llamada rápida?",
+                    "time": "11:15 AM"
+                },
+                {
+                    "type": "sent",
+                    "message": "En 15 minutos estoy disponible.",
+                    "time": "11:20 AM"
+                },
+                {
+                    "type": "received",
+                    "message": "Perfecto, te llamo entonces.",
+                    "time": "11:25 AM"
+                }
+            ]
+        },
+        {
+            "id": "contact_013",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Lucía Vargas",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Cómo va el proyecto de automatización?",
+                    "time": "13:30 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Avanzando según lo planeado. Ya implementamos la primera fase.",
+                    "time": "13:35 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "¿Cuándo podemos ver los primeros resultados?",
+                    "time": "13:40 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_014",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Ricardo Flores",
+            "messages": [
+                {
+                    "type": "received",
+                    "message": "¿Viste el email sobre la nueva política de seguridad?",
+                    "time": "14:45 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "Sí, tenemos que actualizar varios protocolos.",
+                    "time": "14:50 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "¿Podemos coordinar una reunión del equipo para discutirlo?",
+                    "time": "14:55 PM"
+                }
+            ]
+        },
+        {
+            "id": "contact_015",
+            "photo": "asects/img/profilePhoto.png",
+            "name": "Andrea Castro",
+            "messages": [
+                {
+                    "type": "sent",
+                    "message": "¿Ya probaste la nueva actualización del sistema?",
+                    "time": "15:15 PM"
+                },
+                {
+                    "type": "received",
+                    "message": "Sí, encontré algunos detalles que hay que ajustar.",
+                    "time": "15:20 PM"
+                },
+                {
+                    "type": "sent",
+                    "message": "¿Me puedes enviar un reporte detallado?",
+                    "time": "15:25 PM"
+                }
+            ]
+        }
+    ]
+}
