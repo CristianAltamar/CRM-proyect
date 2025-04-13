@@ -32,7 +32,7 @@ const createInterfaxChats = (container, chats) => {
         const searchInput = document.createElement("INPUT");
         searchInput.id = "search_chat";
         searchInput.setAttribute("placeholder","Buscar...")
-        //searchInput.addEventListener("keyup", e => {SearchChats(e)});
+        searchInput.addEventListener("keyup", e => SearchChats(e));
         
         const searchContainer = document.createElement("DIV");
         searchContainer.className = "header-mid";
@@ -55,6 +55,41 @@ const createInterfaxChats = (container, chats) => {
 
         container.appendChild(chatSection);
 }
+
+const SearchChats = e => {
+    const search = document.querySelector(".search_header");
+    if(e.target.value.length > 0) {
+        if(!search.classList.contains("search_active")){
+            search.classList.add("search_active");
+            search.textContent = "close";
+        }
+    } else {
+        search.classList.remove("search_active");
+        search.textContent = "search";
+    }
+
+    const searchValue = e.target.value.toLowerCase();
+    const chatsContainer = document.querySelector(".chats_container");
+        if (e.target.value.length > 2){
+            const searchChats = [...dataChats.filter( chat => chat.name.toLowerCase().includes(searchValue)),...dataChats.filter( chat => chat.messages[chat.messages.length - 1].message.toLowerCase().includes(searchValue))];
+            
+            if(searchChats.length > 0){
+                chatsContainer.innerHTML = "";
+                const chats = createChats(searchChats);
+                chatsContainer.appendChild(chats);
+                return;
+            }
+            
+            chatsContainer.innerHTML = "";
+            chatsContainer.innerHTML = "<p>No se encontraron chats</p>";
+            return;
+        }
+        chatsContainer.innerHTML = "";
+        const chats = createChats(dataChats);
+        chatsContainer.appendChild(chats);
+}
+
+
 
 const createChats = dtChats => {
     const chatsFragment = document.createDocumentFragment();
@@ -98,7 +133,34 @@ const createChats = dtChats => {
     return chatsFragment;
 }
 
-const createInterfax = container => {
+const createSimpleInterfax = container => {
+    if(document.querySelector(".interfax-chat_section")) document.querySelector(".interfax-chat_section").remove();
+
+        const simpleInterfax = document.createElement("DIV");
+        simpleInterfax.className = "simple-interfax";
+        simpleInterfax.innerHTML = `
+        <span class="material-symbols-outlined">
+        chat
+        </span>`;
+
+        container.appendChild(simpleInterfax);
+
+        const simpleInterfaxText = document.createElement("P");
+        simpleInterfaxText.className = "simple-interfax_text";
+        simpleInterfaxText.textContent = "Selecciona un chat para iniciar una conversación";
+
+        simpleInterfax.appendChild(simpleInterfaxText);
+
+}
+
+document.querySelector("body").addEventListener("keyup", e => {
+    if(e.key == "Escape") {
+        if(document.querySelector(".interfax-chat_section")) document.querySelector(".interfax-chat_section").remove();
+        if(!document.querySelector(".simple-interfax")) createSimpleInterfax(container);
+    }
+})
+
+const createInterfaxChat = container => {
     const imgChatContact = document.createElement("IMG");
     imgChatContact.className = "profile-photo_chat";
     imgChatContact.setAttribute("alt","Foto de perfil");
@@ -156,12 +218,15 @@ const createInterfax = container => {
     interfaxContainer.appendChild(sendMessageWrapper);
     
     container.appendChild(interfaxContainer)
+    return;
+
 }
 
 function sectionChatCreate(chatId) {
     const chat = dataChats.find( chat => chat.id == chatId);
 
-    //if(!document.querySelector(".interfax-chat_section")) createInterfax(container);
+    if(!document.querySelector(".interfax-chat_section")) createInterfaxChat(container);
+    if(document.querySelector(".simple-interfax")) document.querySelector(".simple-interfax").remove();
     
 
     const imgChatContact = document.querySelector(".profile-photo_chat");
@@ -184,4 +249,15 @@ function sectionChatCreate(chatId) {
 };
 
 createInterfaxChats(container, createChats(dataChats));
-createInterfax(container);
+createSimpleInterfax(container);
+
+const btnSearch = document.querySelector(".search_header");
+
+btnSearch.addEventListener("click", () => {
+    if(btnSearch.textContent === "close"){
+        document.querySelector("#search_chat").value = "";
+        SearchChats({target: document.querySelector("#search_chat")});
+        return;
+    }
+    document.querySelector("#search_chat").focus();
+})

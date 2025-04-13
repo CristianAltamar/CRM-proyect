@@ -200,6 +200,30 @@ a{
     text-overflow: ellipsis;
 }
 
+/*Simpple interfax*/
+
+.simple-interfax{
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple-interfax span{
+    font-size: 4rem;
+    color: #123;
+    opacity: .6;
+    padding: 20px;
+}
+
+.simple-interfax p{
+    font-size: 1.3rem;
+    color: #123;
+    opacity:.6; 
+}
+
 /*Message section*/
 
 .interfax-chat_section{
